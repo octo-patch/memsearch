@@ -278,7 +278,7 @@ def test_maintenance_routes_minimax_shortcut_to_openai_compatible_runner(
 
     assert results[0].action == "none"
     assert captured == {
-        "model": "MiniMax-M3",
+        "model": "MiniMax-M3.1-Flash",
         "provider_type": "openai-compatible",
         "config_type": "openai-compatible",
         "base_url": "https://api.minimax.io/v1",

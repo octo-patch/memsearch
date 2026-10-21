@@ -180,7 +180,7 @@ def test_summarize_uses_minimax_shortcut(monkeypatch, tmp_path: Path):
     assert result.exit_code == 0
     assert result.output.strip() == "- summarized"
     assert "Transcript:\n[User]: hello" in captured["prompt"]
-    assert captured["model"] == "MiniMax-M3"
+    assert captured["model"] == "MiniMax-M3.1-Flash"
     assert captured["base_url"] == "https://api.minimax.io/v1"
     assert captured["api_key"] == "env:MINIMAX_API_KEY"
 

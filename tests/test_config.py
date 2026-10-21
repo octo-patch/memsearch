@@ -672,7 +672,7 @@ def test_minimax_llm_provider_shortcut_uses_openai_compatible_defaults(monkeypat
     provider, model, base_url, api_key = resolve_llm_provider_settings("minimax")
 
     assert provider == "openai-compatible"
-    assert model == "MiniMax-M3"
+    assert model == "MiniMax-M3.1-Flash"
     assert base_url == "https://api.minimax.io/v1"
     assert api_key == "env:MINIMAX_API_KEY"
 
@@ -685,7 +685,7 @@ def test_minimax_llm_provider_shortcut_selects_cn_region(monkeypatch: pytest.Mon
     provider, model, base_url, _ = resolve_llm_provider_settings("minimax")
 
     assert provider == "openai-compatible"
-    assert model == "MiniMax-M3"
+    assert model == "MiniMax-M3.1-Flash"
     assert base_url == "https://api.minimaxi.com/v1"
 
 

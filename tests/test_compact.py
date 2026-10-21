@@ -156,7 +156,7 @@ async def test_compact_chunks_dispatches_minimax_to_openai_compatible(monkeypatc
     assert result == "minimax-summary"
     assert captured == {
         "prompt": compact_module.COMPACT_PROMPT.format(chunks="minimax memory"),
-        "model": "MiniMax-M3",
+        "model": "MiniMax-M3.1-Flash",
         "base_url": "https://api.minimax.io/v1",
         "api_key": "env:MINIMAX_API_KEY",
     }

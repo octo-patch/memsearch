@@ -256,8 +256,8 @@ _ENV_PREFIX = "env:"
 # China base host.  The ``minimax`` shortcut resolves to the OpenAI-compatible
 # route so it reuses the existing code path while supplying MiniMax defaults and
 # the selected regional endpoint preset.
-MINIMAX_DEFAULT_LLM_MODEL = "MiniMax-M3"
-MINIMAX_LLM_MODELS = ("MiniMax-M3", "MiniMax-M2.7")
+MINIMAX_DEFAULT_LLM_MODEL = "MiniMax-M3.1-Flash"
+MINIMAX_LLM_MODELS = ("MiniMax-M3.1-Flash", "MiniMax-M3")
 MINIMAX_LLM_PROVIDER_ALIASES = frozenset({"minimax"})
 MINIMAX_API_KEY_ENV_VARS = ("MINIMAX_API_KEY",)
 MINIMAX_BASE_URL_ENV_VARS = ("MINIMAX_API_BASE", "MINIMAX_BASE_URL")
